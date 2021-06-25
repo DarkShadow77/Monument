@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Gallery Zone | Monument </title>
+        
+        <!-- Bootstrap core CSS -->
+  	    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- Custom fonts for this template -->
+        <link rel="stylesheet" href="vendor/fonts/ionicons/css/ionicons.min.css">
+        <link href="vendor/fonts/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+
+        <!-- Theme Style -->
+        <link rel="stylesheet" href="css/gallery.css">
+
+        <!-- Script -->
+        <script src="vendor/js/angular.min.js"></script>
+        <script src="vendor/js/jquery.js"></script>
+        <script src="js/tab.js"></script>
+        <script src="vendor/jquery-ui/jquery-ui.js"></script>
+	</head>
+	<body>
+
+        <!--==========================
+          Navigation Section
+        ============================-->
+        <section class="navv">
+            <nav class="navbar navbar-expand-xl navbar-dark pt-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-uppercase" href="#page-top">
+                      Monuments
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                      Menu
+                      <i class="ion-android-menu"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav text-uppercase pl-md-5 ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="seven.html">Seven Wonders</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active" href="gallery.html">Gallery Zone</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutus.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutus.html#contact">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="aboutus.html#FeedBack">FeedBack</a>
+                            </li>
+                        </ul>
+
+                        <div class="navbar-nav ml-auto">
+                            <form method="post" class="search-form">
+                                <span class="icon ion ion-search"></span>
+                                <input type="text" class="form-control pl-4" placeholder="Search...">
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <!--==========================
+          Portfolio Section
+        ============================-->
+        <section id="portfolio" class="section">
+            <div class="container">
+
+                <div class="section-header">
+                    <h3>Gallery Zone</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="tab" ng-app="">
+                            <ul id="portfolio-flters">
+                                <li><a href="#north" class="active mr-8">North</a></li>
+                                <li><a href="#south">South</a></li>
+                                <li><a href="#east">East</a></li>
+                                <li><a href="#west">West</a></li>
+                            </ul>
+                            
+
+                            <div id="north">
+                                <div ng-include="'north.html'"></div>
+                            </div>
+
+                            <div id="south">
+                                <div ng-include="'south.html'"></div>
+                            </div>
+
+                            <div id="east">
+                                <div ng-include="'east.html'"></div>
+                            </div>
+
+                            <div id="west">
+                                <div ng-include="'west.html'"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==========================
+        Footer Section
+        ============================-->
+        <footer id="sticky-footer" class="bg-light py-4 text-black-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 site-footer mx-auto">
+                        <h3>Quick Links</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="seven.html">Seven Wonders</a></li>
+                            <li><a href="gallery.html">Gallery Zone</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="aboutus.html#contact">Contact Us</a></li>
+                            <li><a href="aboutus.html#feedback">Feedback</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6 col-xs-12 mx-auto social-icons">
+                        <ul class="list-unstyled text-center">
+                            <li class="">
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#">
+                                    <i class="ion-social-google"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="ion-social-hackernews"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="ion-social-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#">
+                                    <i class="ion-social-skype"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="ion-social-whatsapp"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="ion-social-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <small>Copyright &copy;2020 All rights reserved</small>
+                </div>
+            </div>
+        </footer>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
